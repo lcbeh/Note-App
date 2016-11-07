@@ -6,7 +6,7 @@
 
   Notes.prototype.readText = function () {
     return this.text;
-  }
+  };
 
   exports.Notes = Notes;
 

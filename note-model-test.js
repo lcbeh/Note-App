@@ -7,3 +7,15 @@ if (note1.readText() !== "hello") {
 } else {
   console.log("We are right!");
 }
+
+var ListNotes = require("./note-list-model").ListNotes;
+
+var listNote1 = new ListNotes();
+
+listNote1.newNote(note1.text);
+
+if (listNote1.list[0] !== 'hello') {
+  throw new Error("should equal hello");
+} else {
+  console.log("We are right!");
+}
